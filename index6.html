@@ -1,0 +1,26 @@
+<html>
+<head>
+    <script type="text/javascript">
+      function Verificar()
+      {
+        var clave=document.getElementById('clave').value;
+        if (clave.length<5)
+        {
+          alert('La clave no puede tener menos de 5 caracteres!!!');
+        }
+        else
+        {
+          alert('Largo de clave correcta');
+        }
+      }
+    </script>
+</head>
+<body>
+  <form>
+  Ingrese una clave:
+  <input type="password" id="clave">
+  <br>
+  <input type="button" value="Confirmar" onClick="Verificar()">
+</form>
+</body>
+</html>

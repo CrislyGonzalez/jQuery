@@ -1,0 +1,23 @@
+<html>
+<head>
+	<script type="text/javascript">
+		function Vaciar(control)
+		{
+		  control.value='';
+		}
+		function VerificarEntrada(control)
+		{
+		  if (control.value=='')
+		    alert('Debe ingresar datos');
+		}
+	</script>
+</head>
+<body>
+	<form>
+		<input type="text" id="nombre" onFocus="Vaciar(this)" onBlur="VerificarEntrada(this)" value="nombre"><br>
+		<input type="text" id="edad" onFocus="Vaciar(this)" onBlur="VerificarEntrada(this)" value="mail">
+		<br>
+		<input type="button" value="Confirmar">
+	</form>
+</body>
+</html>
